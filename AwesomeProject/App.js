@@ -8,6 +8,13 @@ import {
 } from "react-native-gesture-handler";
 import * as Speech from "expo-speech";
 import Icon from "react-native-vector-icons/FontAwesome";
+import {AppCenterReactNative} from 'appcenter-react-native';
+import {AppCenterReactNativeAnalytics} from 'appcenter-analytics';
+import {AppCenterReactNativeCrashes} from 'appcenter-crashes';
+
+AppCenterReactNative.setLogLevel(AppCenterReactNative.LogLevel.VERBOSE);
+AppCenterReactNativeAnalytics.setEnabled(true);
+AppCenterReactNativeCrashes.setEnabled(true);
 
 const App = () => {
   const translateX = useRef(new Animated.Value(0)).current;
