@@ -8,9 +8,9 @@ import {
 } from "react-native-gesture-handler";
 import * as Speech from "expo-speech";
 import Icon from "react-native-vector-icons/FontAwesome";
-import {AppCenterReactNative} from 'appcenter-react-native';
-import {AppCenterReactNativeAnalytics} from 'appcenter-analytics';
-import {AppCenterReactNativeCrashes} from 'appcenter-crashes';
+import { AppCenterReactNative } from "appcenter-react-native";
+import { AppCenterReactNativeAnalytics } from "appcenter-analytics";
+import { AppCenterReactNativeCrashes } from "appcenter-crashes";
 
 AppCenterReactNative.setLogLevel(AppCenterReactNative.LogLevel.VERBOSE);
 AppCenterReactNativeAnalytics.setEnabled(true);
@@ -85,10 +85,12 @@ const App = () => {
       <Pressable onPress={speakText}>
         <Text style={[styles.text, { marginBottom: 300 }]}>Hello World</Text>
       </Pressable>
-      <Icon name="rotate-right" 
-      size={100}
-      color="yellow" 
-      style={{marginBottom : 100}}/>
+      <Icon
+        name="rotate-right"
+        size={100}
+        color="yellow"
+        style={{ marginBottom: 100 }}
+      />
     </View>
   );
 };
