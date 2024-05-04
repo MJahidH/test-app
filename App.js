@@ -59,7 +59,8 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <GestureHandlerRootView style={styles.container}>
+      <GestureHandlerRootView 
+        style={styles.container}>
         <TapGestureHandler onHandlerStateChange={onDoubleTap} numberOfTaps={2}>
           <PanGestureHandler
             onGestureEvent={onGestureEvent}
